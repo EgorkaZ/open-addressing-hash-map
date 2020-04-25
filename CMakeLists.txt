@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 
-include(open-addressing-hash-test/Strict.cmake)
+include(test/Strict.cmake)
 
 set(PROJECT_NAME open_addressing_hash)
 project(${PROJECT_NAME})
@@ -25,6 +25,6 @@ add_subdirectory(googletest)
 enable_testing()
 
 # test is a git submodule
-add_subdirectory(open-addressing-hash-test)
+add_subdirectory(test)
 
 add_test(NAME tests COMMAND runUnitTests)
